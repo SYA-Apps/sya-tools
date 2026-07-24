@@ -144,6 +144,8 @@
     border-radius:.8rem;padding:.8rem;box-shadow:var(--shadow)}
   form.add input{border:1px solid var(--border);background:var(--surface2);border-radius:.5rem;
     padding:.5rem .6rem;min-height:var(--tap);width:100%}
+  form.add .hint{margin:0;font-size:.78rem;color:var(--muted);line-height:1.5}
+  form.add .hint b{color:var(--text)}
 
   .note{background:var(--warn-bg);border:1px solid var(--warn-bd);border-radius:.7rem;padding:.7rem .85rem;font-size:.8rem}
   .note b{color:var(--text)}
@@ -392,6 +394,10 @@
         +'<input name="name" placeholder="이름" required>'
         +'<input name="mail" type="email" inputmode="email" placeholder="플레이스토어에 로그인된 Gmail" required>'
         +'<button class="btn" type="submit">테스터 추가</button>'
+        // 이 표는 개인 수첩이고 콘솔 목록이 진짜다. 여기만 넣고 끝내면 그 사람은
+        // 링크를 눌러도 "테스터가 아닙니다" 를 본다. 더하는 그 자리에서 말해 준다.
+        +'<p class="hint">⚠️ <b>플레이 콘솔의 「SYA 테스터」 목록에도 넣어야</b> 링크가 열려요. '
+        +'이 표는 누가 했는지 세는 수첩일 뿐이에요.</p>'
       +'</form>'
       +'<div class="note"><b>⚠️ 흔한 사고 두 가지</b><ul>'
         +'<li>테스터가 <b>“테스터 나가기”</b>를 누르면 그 사람은 처음부터예요. 합쳐서 14일은 인정 안 됩니다.</li>'
